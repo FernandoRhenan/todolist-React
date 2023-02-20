@@ -1,0 +1,135 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    gap: 20px;
+}
+
+.menuIcon {
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.boxCloseIcon {
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.closeIcon {
+    margin: 16px 20px;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.closeIcon:active,
+.menuIcon:active {
+    transform: scale(0.90);
+}
+
+.form button:active {
+    transform: scale(0.98);
+}
+
+.slider {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    width: 300px;
+    height: 100%;
+    transition: 300ms
+}
+
+.sliderBody {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 60px);
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.logoutArea {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    gap: 5px;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.logoutArea:hover {
+    color: red;
+}
+
+.logoutArea svg {
+    font-size: 1.4em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form label input[type=color] {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+.form label span {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.form button {
+    transition: 250ms;
+    margin-top: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+    color: white;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.form p {
+    margin: 2px;
+    font-size: 0.5em;
+}
+
+
+@media screen and (max-width: 350px) {
+
+    .slider {
+        width: 90%;
+        min-width: 200px;
+        padding: 0 10px;
+    }
+
+    .form label input[type=file] {
+        width: 100%;
+    }
+
+    .logoutArea {
+        width: 90%;
+    }
+
+    .form button {
+        margin: auto;
+        width: 90%;
+    }
+
+}

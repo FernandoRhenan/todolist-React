@@ -1,0 +1,8 @@
+.tasks{
+    background-color: #555;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    overflow: auto;
+}
